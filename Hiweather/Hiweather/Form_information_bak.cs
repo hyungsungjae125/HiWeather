@@ -96,7 +96,8 @@ namespace Hiweather
             btn = (Button)o;
             //btn.BackColor = (btn.BackColor == Color.Green) ? btn.BackColor = Color.Silver : btn.BackColor = Color.Green;                     
         }
-        // 테스트
+        // 테스트 
+        // 테스트2
     }
  
 }
