@@ -17,6 +17,7 @@ namespace Hiweather
             InitializeComponent();
             
             Load += Form_bookmark_Load;
+            MessageBox.Show("테스트");
         }
         Label label;
         TableLayoutPanel tableLayoutPanel1;
