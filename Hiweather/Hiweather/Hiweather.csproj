@@ -76,6 +76,12 @@
     <Compile Include="Form_information.Designer.cs">
       <DependentUpon>Form_information.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_information_bak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_information_bak.Designer.cs">
+      <DependentUpon>Form_information_bak.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
