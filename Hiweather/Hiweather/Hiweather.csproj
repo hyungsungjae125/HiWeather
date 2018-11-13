@@ -78,6 +78,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_config.resx">
+      <DependentUpon>Form_config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_information.resx">
+      <DependentUpon>Form_information.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
