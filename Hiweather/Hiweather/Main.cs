@@ -20,6 +20,7 @@ namespace Hiweather
         }
         FlowLayoutPanel flowLayoutPanel1 = new FlowLayoutPanel();
         Button button = new Button();
+        
          private void Main_Load(object sender, EventArgs e)
         {
             
@@ -28,9 +29,9 @@ namespace Hiweather
             DrawBTN("option","설정");
              
              
-           
 
             flowLayoutPanel1.Controls.Add(button);
+            
 
 
            Controls.Add(flowLayoutPanel1);
