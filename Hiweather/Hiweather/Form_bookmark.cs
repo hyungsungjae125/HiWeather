@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -42,7 +43,7 @@ namespace Hiweather
             label.TextAlign = ContentAlignment.MiddleCenter;
             label.Location = new Point(0, 0);
             label.Size = new Size(100, 20);
-            label.Font = new Font(label.Font, FontStyle.Bold);
+            label.Font = new Font(FontFamily.GenericSansSerif, 15.0F, FontStyle.Bold);
             //label.Font.Bold = true;
             //label.Font.Size = 10;
             //label.Size=new Size(1000,200);
@@ -57,7 +58,7 @@ namespace Hiweather
             PictureBox picture = new PictureBox();
 
             p.Name = "panel" + (i * 2 + j + 1);
-            p.Location = new Point(20 + i * 435, 30 + j * 140);
+            p.Location = new Point(20 + i * 435, 35 + j * 140);
             p.Size = new Size(405, 120);
             p.BorderStyle = BorderStyle.FixedSingle;
 
@@ -71,11 +72,15 @@ namespace Hiweather
             label1.Size = new Size(100, 20);
             label1.Font = new Font(FontFamily.GenericSerif, 14.0F);
 
-            picture.Image = Bitmap.FromFile(@"image\dust1.png");
+            //Stream s = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("dust1.PNG");
+            string filePath = Application.StartupPath+@"\dust1.PNG";
+            //essageBox.Show(filePath);
+            //picture.Image = new Bitmap(@"C:\Users\GDC20\Desktop\visual github\HiWeather\Hiweather\Hiweather\image\dust1.PNG");
+            picture.Image =new Bitmap(filePath);
             picture.SizeMode = PictureBoxSizeMode.StretchImage;
             picture.Location = new Point(5,20);
             picture.Size = new Size(50,50);
-            //picture.Image = 
+            
 
             p.Controls.Add(label);
             p.Controls.Add(label1);
