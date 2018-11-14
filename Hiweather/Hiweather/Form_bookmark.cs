@@ -71,13 +71,15 @@ namespace Hiweather
             label1.Size = new Size(100, 20);
             label1.Font = new Font(FontFamily.GenericSerif, 14.0F);
 
-            picture.Location = new Point();
-            picture.Size = new Size();
+            picture.Image = Bitmap.FromFile(@"image\dust1.png");
+            picture.SizeMode = PictureBoxSizeMode.StretchImage;
+            picture.Location = new Point(5,20);
+            picture.Size = new Size(50,50);
             //picture.Image = 
 
             p.Controls.Add(label);
             p.Controls.Add(label1);
-
+            p.Controls.Add(picture);
             return p;
         }
         //private void TableLayoutPanelCreate()

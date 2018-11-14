@@ -78,6 +78,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_bookmark.resx">
+      <DependentUpon>Form_bookmark.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_config.resx">
       <DependentUpon>Form_config.cs</DependentUpon>
     </EmbeddedResource>
